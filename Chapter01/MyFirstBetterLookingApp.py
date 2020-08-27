@@ -19,7 +19,7 @@ class MyFrame(wx.Frame):
     # Usually represents the first/main window a user will see
     def __init__(self, parent, title, pos=pos):
         super().__init__(parent=parent, title=title, pos=pos)
-    
+        self.OnInit()
     def OnInit(self):
         panel = MyPanel(parent=self)
 
